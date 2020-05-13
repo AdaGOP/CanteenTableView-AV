@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pb0-lk-PWO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -9,18 +10,64 @@
         <!--Media Playback-->
         <scene sceneID="MTn-PT-dc5">
             <objects>
-                <viewController id="pb0-lk-PWO" sceneMemberID="viewController">
+                <viewController id="pb0-lk-PWO" customClass="MediaPlaybackVC" customModule="GOPDC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UPC-cc-Sbc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JR8-jY-je3" customClass="VideoView" customModule="GOPDC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="180"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="AYj-e2-HwX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3a-r9-ikf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pk6-YN-xaH">
+                                        <rect key="frame" x="187" y="70" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="m2I-t0-Gq6"/>
+                                            <constraint firstAttribute="height" constant="40" id="uWC-r6-P16"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="play"/>
+                                        <connections>
+                                            <action selector="playPauseTapped:" destination="pb0-lk-PWO" eventType="touchUpInside" id="0nY-LK-W2t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Pk6-YN-xaH" firstAttribute="centerY" secondItem="e3a-r9-ikf" secondAttribute="centerY" id="AOz-MN-zUv"/>
+                                    <constraint firstItem="Pk6-YN-xaH" firstAttribute="centerX" secondItem="e3a-r9-ikf" secondAttribute="centerX" id="sT3-lV-ka8"/>
+                                    <constraint firstAttribute="height" constant="180" id="y2b-an-Pdq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JR8-jY-je3" firstAttribute="leading" secondItem="cPr-O2-j1d" secondAttribute="leading" id="6NB-BI-rGs"/>
+                            <constraint firstItem="e3a-r9-ikf" firstAttribute="leading" secondItem="cPr-O2-j1d" secondAttribute="leading" id="ACd-fr-Hhg"/>
+                            <constraint firstItem="e3a-r9-ikf" firstAttribute="top" secondItem="cPr-O2-j1d" secondAttribute="top" id="G3p-hb-AHy"/>
+                            <constraint firstItem="e3a-r9-ikf" firstAttribute="trailing" secondItem="cPr-O2-j1d" secondAttribute="trailing" id="QZU-J0-llC"/>
+                            <constraint firstItem="JR8-jY-je3" firstAttribute="top" secondItem="cPr-O2-j1d" secondAttribute="top" id="hZp-Zx-o38"/>
+                            <constraint firstItem="cPr-O2-j1d" firstAttribute="trailing" secondItem="JR8-jY-je3" secondAttribute="trailing" id="vYn-1H-PEc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cPr-O2-j1d"/>
                     </view>
                     <navigationItem key="navigationItem" title="Media Playback" id="NWJ-d1-5H2"/>
+                    <connections>
+                        <outlet property="playPauseButton" destination="Pk6-YN-xaH" id="d9z-JX-Bcu"/>
+                        <outlet property="videoPlayer" destination="JR8-jY-je3" id="w9m-ni-jCc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sx3-KC-GDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2344.9275362318845" y="-349.55357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" width="512" height="512"/>
+    </resources>
 </document>

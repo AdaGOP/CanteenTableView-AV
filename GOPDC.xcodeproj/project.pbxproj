@@ -21,6 +21,8 @@
 		4640ED10246BBF74003F5348 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4640ED0F246BBF74003F5348 /* VideoCell.xib */; };
 		46D3CCDA246BDDF7002A0106 /* NormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCD8246BDDF7002A0106 /* NormalCell.swift */; };
 		46D3CCDB246BDDF7002A0106 /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46D3CCD9246BDDF7002A0106 /* NormalCell.xib */; };
+		46D3CCDD246C18C2002A0106 /* MediaPlaybackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */; };
+		46D3CCDF246C1AFB002A0106 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCDE246C1AFB002A0106 /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		4640ED0F246BBF74003F5348 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		46D3CCD8246BDDF7002A0106 /* NormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalCell.swift; sourceTree = "<group>"; };
 		46D3CCD9246BDDF7002A0106 /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
+		46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlaybackVC.swift; sourceTree = "<group>"; };
+		46D3CCDE246C1AFB002A0106 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				4604EA66246AE768004DA3A9 /* AppDelegate.swift */,
 				4604EA68246AE768004DA3A9 /* SceneDelegate.swift */,
 				4604EA6A246AE768004DA3A9 /* MenuVC.swift */,
+				46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */,
 				4604EA6C246AE768004DA3A9 /* Main.storyboard */,
 				1B0092B5246C03170020B582 /* MediaCapture.storyboard */,
 				1B0092B3246C02AF0020B582 /* MediaPlayback.storyboard */,
@@ -87,6 +92,7 @@
 				4640ED0F246BBF74003F5348 /* VideoCell.xib */,
 				46D3CCD8246BDDF7002A0106 /* NormalCell.swift */,
 				46D3CCD9246BDDF7002A0106 /* NormalCell.xib */,
+				46D3CCDE246C1AFB002A0106 /* VideoView.swift */,
 			);
 			path = GOPDC;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4604EA6B246AE768004DA3A9 /* MenuVC.swift in Sources */,
+				46D3CCDF246C1AFB002A0106 /* VideoView.swift in Sources */,
 				4640ED0E246BBEB2003F5348 /* VideoCell.swift in Sources */,
+				46D3CCDD246C18C2002A0106 /* MediaPlaybackVC.swift in Sources */,
 				4604EA67246AE768004DA3A9 /* AppDelegate.swift in Sources */,
 				46D3CCDA246BDDF7002A0106 /* NormalCell.swift in Sources */,
 				4604EA69246AE768004DA3A9 /* SceneDelegate.swift in Sources */,

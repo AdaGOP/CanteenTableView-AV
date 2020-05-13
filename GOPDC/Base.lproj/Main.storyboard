@@ -68,7 +68,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCs-3V-o6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="-421"/>
+            <point key="canvasLocation" x="1568" y="-152"/>
         </scene>
         <!--MediaCapture-->
         <scene sceneID="b58-zx-3vZ">
@@ -78,7 +78,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZL-Y4-jES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="-277"/>
+            <point key="canvasLocation" x="1564" y="-71"/>
         </scene>
         <!--AudioRecorder-->
         <scene sceneID="VP6-ST-rtm">
@@ -88,7 +88,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KS6-Bp-nmC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="-179"/>
+            <point key="canvasLocation" x="1575" y="-10"/>
         </scene>
         <!--TexttoSpeech-->
         <scene sceneID="eVZ-2w-Brk">
@@ -98,7 +98,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDd-7E-4kd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="227"/>
+            <point key="canvasLocation" x="1570" y="72"/>
         </scene>
     </scenes>
 </document>
