@@ -94,11 +94,8 @@
 				4640ED0F246BBF74003F5348 /* VideoCell.xib */,
 				46D3CCD8246BDDF7002A0106 /* NormalCell.swift */,
 				46D3CCD9246BDDF7002A0106 /* NormalCell.xib */,
-<<<<<<< HEAD
 				46D3CCDE246C1AFB002A0106 /* VideoView.swift */,
-=======
 				1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */,
->>>>>>> master
 			);
 			path = GOPDC;
 			sourceTree = "<group>";
