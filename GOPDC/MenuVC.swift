@@ -100,6 +100,12 @@ extension MenuVC: UITableViewDelegate {
             return 44
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0{
+            performSegue(withIdentifier: AVMenu[indexPath.row], sender: self)
+        }
+    }
 }
 
 
