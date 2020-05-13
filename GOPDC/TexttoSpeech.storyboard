@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="auQ-bG-NT2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -9,18 +10,54 @@
         <!--Text to Speech-->
         <scene sceneID="dFn-E4-aed">
             <objects>
-                <viewController id="auQ-bG-NT2" sceneMemberID="viewController">
+                <viewController id="auQ-bG-NT2" customClass="TexttoSpeechVC" customModule="GOPDC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CSb-0u-Z2h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type what you wanna say here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ggt-bD-He1">
+                                <rect key="frame" x="20" y="44" width="374" height="291"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="291" id="Jgb-7T-35K"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC0-Br-vYX">
+                                <rect key="frame" x="20" y="840" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IuW-Yk-wkO"/>
+                                </constraints>
+                                <state key="normal" title="Speak">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapSpeakButton:" destination="auQ-bG-NT2" eventType="touchUpInside" id="PlZ-IB-Dbc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XC0-Br-vYX" firstAttribute="leading" secondItem="lXg-V9-hkj" secondAttribute="leading" constant="20" id="GfK-A4-edR"/>
+                            <constraint firstItem="XC0-Br-vYX" firstAttribute="bottom" secondItem="lXg-V9-hkj" secondAttribute="bottom" constant="8" id="IVH-kE-weY"/>
+                            <constraint firstItem="lXg-V9-hkj" firstAttribute="trailing" secondItem="ggt-bD-He1" secondAttribute="trailing" constant="20" id="R6E-M6-cgR"/>
+                            <constraint firstItem="lXg-V9-hkj" firstAttribute="trailing" secondItem="XC0-Br-vYX" secondAttribute="trailing" constant="20" id="YT2-NF-nAG"/>
+                            <constraint firstItem="ggt-bD-He1" firstAttribute="top" secondItem="lXg-V9-hkj" secondAttribute="top" id="cJC-oR-uk3"/>
+                            <constraint firstItem="ggt-bD-He1" firstAttribute="leading" secondItem="lXg-V9-hkj" secondAttribute="leading" constant="20" id="dbF-I1-4aF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lXg-V9-hkj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Text to Speech" id="KZO-Tz-KYs"/>
+                    <connections>
+                        <outlet property="myTextView" destination="ggt-bD-He1" id="5mj-3U-12f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdy-9n-SP7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="227"/>
+            <point key="canvasLocation" x="1755.072463768116" y="226.33928571428569"/>
         </scene>
     </scenes>
 </document>
