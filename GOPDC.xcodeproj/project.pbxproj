@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0092B4246C02AF0020B582 /* MediaPlayback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0092B3246C02AF0020B582 /* MediaPlayback.storyboard */; };
+		1B0092B6246C03170020B582 /* MediaCapture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0092B5246C03170020B582 /* MediaCapture.storyboard */; };
 		4604EA67246AE768004DA3A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604EA66246AE768004DA3A9 /* AppDelegate.swift */; };
 		4604EA69246AE768004DA3A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604EA68246AE768004DA3A9 /* SceneDelegate.swift */; };
 		4604EA6B246AE768004DA3A9 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604EA6A246AE768004DA3A9 /* MenuVC.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0092B3246C02AF0020B582 /* MediaPlayback.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MediaPlayback.storyboard; sourceTree = "<group>"; };
+		1B0092B5246C03170020B582 /* MediaCapture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MediaCapture.storyboard; sourceTree = "<group>"; };
 		4604EA63246AE768004DA3A9 /* GOPDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOPDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4604EA66246AE768004DA3A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4604EA68246AE768004DA3A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				4604EA68246AE768004DA3A9 /* SceneDelegate.swift */,
 				4604EA6A246AE768004DA3A9 /* MenuVC.swift */,
 				4604EA6C246AE768004DA3A9 /* Main.storyboard */,
+				1B0092B5246C03170020B582 /* MediaCapture.storyboard */,
+				1B0092B3246C02AF0020B582 /* MediaPlayback.storyboard */,
 				4604EA6F246AE76A004DA3A9 /* Assets.xcassets */,
 				4604EA71246AE76A004DA3A9 /* LaunchScreen.storyboard */,
 				4604EA74246AE76A004DA3A9 /* Info.plist */,
@@ -139,6 +145,8 @@
 			files = (
 				4604EA73246AE76A004DA3A9 /* LaunchScreen.storyboard in Resources */,
 				4640ED10246BBF74003F5348 /* VideoCell.xib in Resources */,
+				1B0092B4246C02AF0020B582 /* MediaPlayback.storyboard in Resources */,
+				1B0092B6246C03170020B582 /* MediaCapture.storyboard in Resources */,
 				4604EA70246AE76A004DA3A9 /* Assets.xcassets in Resources */,
 				4604EA6E246AE768004DA3A9 /* Main.storyboard in Resources */,
 				46D3CCDB246BDDF7002A0106 /* NormalCell.xib in Resources */,

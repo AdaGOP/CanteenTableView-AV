@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdD-jf-o7V">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Media Capture-->
+        <scene sceneID="EOn-RO-Sgf">
+            <objects>
+                <viewController id="qdD-jf-o7V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iaB-57-ryz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="H3Z-jb-jaU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Media Capture" id="K0O-oj-vm6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBh-ci-CyB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2532" y="99"/>
+        </scene>
+    </scenes>
+</document>
