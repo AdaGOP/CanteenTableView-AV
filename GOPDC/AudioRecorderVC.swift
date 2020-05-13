@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class AudioRecorderVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
-
+    
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
@@ -20,7 +20,7 @@ class AudioRecorderVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerD
     var avPlayer: AVAudioPlayer?
     
     let audioSession = AVAudioSession.sharedInstance()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +28,7 @@ class AudioRecorderVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerD
         stopButton.setTitleColor(.red, for: .normal)
         playButton.isEnabled = false
         playButton.setTitleColor(.red, for: .normal)
-
+        
         // Do any additional setup after loading the view.
         do {
             try audioSession.setCategory(.playAndRecord, mode: .default)
@@ -62,21 +62,21 @@ class AudioRecorderVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerD
         return url
     }
     
-//    func loadRecordingUI() {
-//        recordButton.isEnabled = true
-//        playButton.isEnabled = false
-//        recordButton.setTitle("Tap to Record", for: .normal)
-//        recordButton.addTarget(self, action: #selector(recordAudioButtonTapped), for: .touchUpInside)
-//        view.addSubview(recordButton)
-//    }
+    //    func loadRecordingUI() {
+    //        recordButton.isEnabled = true
+    //        playButton.isEnabled = false
+    //        recordButton.setTitle("Tap to Record", for: .normal)
+    //        recordButton.addTarget(self, action: #selector(recordAudioButtonTapped), for: .touchUpInside)
+    //        view.addSubview(recordButton)
+    //    }
     
     
     @IBAction func tapRecordButton(_ sender: UIButton) {
         let settings = [
-        AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-        AVSampleRateKey: 12000,
-        AVNumberOfChannelsKey: 1,
-        AVEncoderAudioQualityKey: AVAudioQuality.low.rawValue
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.low.rawValue
         ]
         
         do{
@@ -149,13 +149,13 @@ class AudioRecorderVC: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerD
     
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
