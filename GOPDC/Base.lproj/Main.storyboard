@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Menu-->
+        <!--GOPDC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MenuVC" customModule="GOPDC" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Menu" id="OaM-es-f2n"/>
+                    <navigationItem key="navigationItem" title="GOPDC" id="OaM-es-f2n"/>
                     <connections>
                         <outlet property="tableView" destination="E9t-E7-vHK" id="x5S-cs-f6D"/>
                         <segue destination="dqf-n6-Wak" kind="show" identifier="Media Playback" id="CTG-Z5-cn3"/>

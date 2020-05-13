@@ -19,7 +19,7 @@ class MediaPlaybackVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hideControls()
     }
     
     override func viewDidAppear(_ animated: Bool) {
