@@ -15,29 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-Un-DEK">
-                                <rect key="frame" x="179" y="703" width="58" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Record">
-                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapRecordButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="hvL-Zb-o41"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPR-s7-Bvw">
-                                <rect key="frame" x="77" y="703" width="38" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stop">
-                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapStopButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="fHg-MF-unE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grO-UT-8hu">
-                                <rect key="frame" x="309" y="703" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grO-UT-8hu">
+                                <rect key="frame" x="316" y="436" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="VIR-nB-zxY"/>
+                                    <constraint firstAttribute="width" constant="34" id="fVr-hg-aHy"/>
+                                </constraints>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -45,8 +28,42 @@
                                     <action selector="tapPlayButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="zmo-47-DWe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-Un-DEK">
+                                <rect key="frame" x="178" y="436" width="58" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="M2S-b8-qj5"/>
+                                    <constraint firstAttribute="width" constant="58" id="Uvh-fD-iE9"/>
+                                </constraints>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapRecordButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="hvL-Zb-o41"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPR-s7-Bvw">
+                                <rect key="frame" x="60" y="436" width="38" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Db4-s2-hz3"/>
+                                    <constraint firstAttribute="width" constant="38" id="bd0-ni-cgq"/>
+                                </constraints>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapStopButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="fHg-MF-unE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RPR-s7-Bvw" firstAttribute="centerY" secondItem="0Xx-8q-1Hm" secondAttribute="centerY" id="03f-Vi-InK"/>
+                            <constraint firstItem="grO-UT-8hu" firstAttribute="centerY" secondItem="0Xx-8q-1Hm" secondAttribute="centerY" id="4Qh-tc-4u6"/>
+                            <constraint firstItem="6kb-Un-DEK" firstAttribute="leading" secondItem="RPR-s7-Bvw" secondAttribute="trailing" constant="80" id="Ofr-DF-f8C"/>
+                            <constraint firstItem="6kb-Un-DEK" firstAttribute="centerY" secondItem="0Xx-8q-1Hm" secondAttribute="centerY" id="U23-lr-SAU"/>
+                            <constraint firstItem="grO-UT-8hu" firstAttribute="leading" secondItem="6kb-Un-DEK" secondAttribute="trailing" constant="80" id="hWA-HI-aTo"/>
+                            <constraint firstItem="6kb-Un-DEK" firstAttribute="centerX" secondItem="0Xx-8q-1Hm" secondAttribute="centerX" id="loF-Ef-cup"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Xx-8q-1Hm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Audio Recorder" id="yoS-Ho-ErK"/>
