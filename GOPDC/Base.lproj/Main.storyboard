@@ -34,6 +34,8 @@
                         <outlet property="tableView" destination="E9t-E7-vHK" id="x5S-cs-f6D"/>
                         <segue destination="dqf-n6-Wak" kind="show" identifier="Media Playback" id="CTG-Z5-cn3"/>
                         <segue destination="IEH-b0-7Kx" kind="show" identifier="Media Capture" id="rzU-SQ-LW2"/>
+                        <segue destination="dUx-tT-lJo" kind="show" identifier="Audio Recorder" id="tH1-bf-AFc"/>
+                        <segue destination="v1N-jW-CXc" kind="show" identifier="Text to Speech" id="BtJ-mm-Pib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,7 +68,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCs-3V-o6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2344.9275362318845" y="-349.55357142857139"/>
+            <point key="canvasLocation" x="1564" y="-421"/>
         </scene>
         <!--MediaCapture-->
         <scene sceneID="b58-zx-3vZ">
@@ -76,7 +78,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZL-Y4-jES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="99"/>
+            <point key="canvasLocation" x="1564" y="-277"/>
+        </scene>
+        <!--AudioRecorder-->
+        <scene sceneID="VP6-ST-rtm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AudioRecorder" id="dUx-tT-lJo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="khK-dg-o9t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KS6-Bp-nmC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="-179"/>
+        </scene>
+        <!--TexttoSpeech-->
+        <scene sceneID="eVZ-2w-Brk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TexttoSpeech" id="v1N-jW-CXc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Guq-fi-8vB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDd-7E-4kd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="227"/>
         </scene>
     </scenes>
 </document>

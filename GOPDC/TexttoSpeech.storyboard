@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="auQ-bG-NT2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text to Speech-->
+        <scene sceneID="dFn-E4-aed">
+            <objects>
+                <viewController id="auQ-bG-NT2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CSb-0u-Z2h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lXg-V9-hkj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text to Speech" id="KZO-Tz-KYs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdy-9n-SP7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="227"/>
+        </scene>
+    </scenes>
+</document>
