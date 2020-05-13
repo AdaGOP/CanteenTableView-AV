@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class MenuVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     let AVMenu = ["Media Playback","Media Capture","Audio Recorder", "Text to Speech"]
+    let videoUrl = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,27 @@ class MenuVC: UIViewController {
             return "videoCell"
         default:
             return "videoCell"
+        }
+    }
+    
+    func getThumbnailImageFromVideoUrl(url: URL, completion: @escaping ((_ image: UIImage?)->Void)) {
+        DispatchQueue.global().async {
+            let asset = AVAsset(url: url)
+            let avAssetImageGenerator = AVAssetImageGenerator(asset: asset)
+            avAssetImageGenerator.appliesPreferredTrackTransform = true
+            let thumbnailTime = CMTimeMake(value: 20, timescale: 1)
+            do {
+                let cgThumbImage = try avAssetImageGenerator.copyCGImage(at: thumbnailTime, actualTime: nil)
+                let thumbImage = UIImage(cgImage: cgThumbImage)
+                DispatchQueue.main.async {
+                    completion(thumbImage)
+                }
+            } catch {
+                print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            }
         }
     }
 }
@@ -66,6 +90,9 @@ extension MenuVC: UITableViewDataSource {
             }
         case 1 :
             if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier(forSection: indexPath.section), for: indexPath) as? VideoCell {
+                self.getThumbnailImageFromVideoUrl(url: URL(string: videoUrl)!) { (thumbImage) in
+                    cell.videoThumbnail.image = thumbImage
+                }
                 cell.videoSubtitle.text = "Test \(indexPath.row)"
                 cell.videoTitle.text = "WWDC Video on AVFoundation"
                 return cell
@@ -102,8 +129,19 @@ extension MenuVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0{
+        if indexPath.section == 0 {
             performSegue(withIdentifier: AVMenu[indexPath.row], sender: self)
+        } else {
+            playVideo()
+        }
+    }
+    
+    func playVideo() {
+        let player = AVPlayer(url: URL(string: videoUrl)!)
+        let vc = AVPlayerViewController()
+        vc.player = player
+        present(vc, animated: true) {
+            vc.player?.play()
         }
     }
 }
