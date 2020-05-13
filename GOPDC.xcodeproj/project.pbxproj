@@ -25,6 +25,8 @@
 		46D3CCDD246C18C2002A0106 /* MediaPlaybackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */; };
 		46D3CCDF246C1AFB002A0106 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCDE246C1AFB002A0106 /* VideoView.swift */; };
 		46D3CCE1246C2DD2002A0106 /* title.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46D3CCE0246C2DD2002A0106 /* title.mp3 */; };
+		46D3CCE3246C3D54002A0106 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCE2246C3D54002A0106 /* VideoHelper.swift */; };
+		46D3CCE9246C3E7E002A0106 /* RecordVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCE8246C3E7E002A0106 /* RecordVideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlaybackVC.swift; sourceTree = "<group>"; };
 		46D3CCDE246C1AFB002A0106 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		46D3CCE0246C2DD2002A0106 /* title.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title.mp3; sourceTree = "<group>"; };
+		46D3CCE2246C3D54002A0106 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		46D3CCE8246C3E7E002A0106 /* RecordVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,27 +84,61 @@
 		4604EA65246AE768004DA3A9 /* GOPDC */ = {
 			isa = PBXGroup;
 			children = (
+				46D3CCE7246C3E52002A0106 /* Helper */,
+				46D3CCE6246C3E40002A0106 /* Storyboard */,
+				46D3CCE5246C3E12002A0106 /* View */,
+				46D3CCE4246C3E02002A0106 /* Controller */,
 				4604EA66246AE768004DA3A9 /* AppDelegate.swift */,
 				4604EA68246AE768004DA3A9 /* SceneDelegate.swift */,
+				4604EA6F246AE76A004DA3A9 /* Assets.xcassets */,
+				4604EA74246AE76A004DA3A9 /* Info.plist */,
+				46D3CCE0246C2DD2002A0106 /* title.mp3 */,
+			);
+			path = GOPDC;
+			sourceTree = "<group>";
+		};
+		46D3CCE4246C3E02002A0106 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				4604EA6A246AE768004DA3A9 /* MenuVC.swift */,
 				46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */,
 				1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */,
-				4604EA6C246AE768004DA3A9 /* Main.storyboard */,
-				1B0092B5246C03170020B582 /* MediaCapture.storyboard */,
-				1B0092B3246C02AF0020B582 /* MediaPlayback.storyboard */,
-				1B0092B7246C059B0020B582 /* AudioRecorder.storyboard */,
-				1B0092BC246C06BD0020B582 /* TexttoSpeech.storyboard */,
-				4604EA6F246AE76A004DA3A9 /* Assets.xcassets */,
-				4604EA71246AE76A004DA3A9 /* LaunchScreen.storyboard */,
-				4604EA74246AE76A004DA3A9 /* Info.plist */,
+				46D3CCE8246C3E7E002A0106 /* RecordVideoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46D3CCE5246C3E12002A0106 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				4640ED0D246BBEB2003F5348 /* VideoCell.swift */,
 				4640ED0F246BBF74003F5348 /* VideoCell.xib */,
 				46D3CCD8246BDDF7002A0106 /* NormalCell.swift */,
 				46D3CCD9246BDDF7002A0106 /* NormalCell.xib */,
 				46D3CCDE246C1AFB002A0106 /* VideoView.swift */,
-				46D3CCE0246C2DD2002A0106 /* title.mp3 */,
 			);
-			path = GOPDC;
+			path = View;
+			sourceTree = "<group>";
+		};
+		46D3CCE6246C3E40002A0106 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4604EA6C246AE768004DA3A9 /* Main.storyboard */,
+				1B0092B5246C03170020B582 /* MediaCapture.storyboard */,
+				1B0092B3246C02AF0020B582 /* MediaPlayback.storyboard */,
+				1B0092B7246C059B0020B582 /* AudioRecorder.storyboard */,
+				1B0092BC246C06BD0020B582 /* TexttoSpeech.storyboard */,
+				4604EA71246AE76A004DA3A9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		46D3CCE7246C3E52002A0106 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				46D3CCE2246C3D54002A0106 /* VideoHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,12 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D3CCE3246C3D54002A0106 /* VideoHelper.swift in Sources */,
 				1B0092BF246C18620020B582 /* TexttoSpeechVC.swift in Sources */,
 				4604EA6B246AE768004DA3A9 /* MenuVC.swift in Sources */,
 				46D3CCDF246C1AFB002A0106 /* VideoView.swift in Sources */,
 				4640ED0E246BBEB2003F5348 /* VideoCell.swift in Sources */,
 				46D3CCDD246C18C2002A0106 /* MediaPlaybackVC.swift in Sources */,
 				4604EA67246AE768004DA3A9 /* AppDelegate.swift in Sources */,
+				46D3CCE9246C3E7E002A0106 /* RecordVideoVC.swift in Sources */,
 				46D3CCDA246BDDF7002A0106 /* NormalCell.swift in Sources */,
 				4604EA69246AE768004DA3A9 /* SceneDelegate.swift in Sources */,
 			);

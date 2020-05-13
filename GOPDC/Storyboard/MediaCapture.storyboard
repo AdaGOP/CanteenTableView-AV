@@ -10,11 +10,32 @@
         <!--Media Capture-->
         <scene sceneID="EOn-RO-Sgf">
             <objects>
-                <viewController id="qdD-jf-o7V" sceneMemberID="viewController">
+                <viewController id="qdD-jf-o7V" customClass="RecordVideoVC" customModule="GOPDC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iaB-57-ryz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uS-yn-Djw">
+                                <rect key="frame" x="16" y="818" width="382" height="44"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hvQ-Vs-qYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Record Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordTapped:" destination="qdD-jf-o7V" eventType="touchUpInside" id="dEa-4q-jQn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H3Z-jb-jaU" firstAttribute="trailing" secondItem="5uS-yn-Djw" secondAttribute="trailing" constant="16" id="Cav-Mc-vjV"/>
+                            <constraint firstItem="5uS-yn-Djw" firstAttribute="leading" secondItem="H3Z-jb-jaU" secondAttribute="leading" constant="16" id="vEW-SW-mVw"/>
+                            <constraint firstItem="H3Z-jb-jaU" firstAttribute="bottom" secondItem="5uS-yn-Djw" secondAttribute="bottom" id="ybX-W5-j93"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="H3Z-jb-jaU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Media Capture" id="K0O-oj-vm6"/>

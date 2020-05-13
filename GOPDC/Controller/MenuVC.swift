@@ -94,7 +94,7 @@ extension MenuVC: UITableViewDataSource {
                     cell.videoThumbnail.image = thumbImage
                 }
                 cell.videoSubtitle.text = "Test \(indexPath.row)"
-                cell.videoTitle.text = "WWDC Video on AVFoundation"
+                cell.videoTitle.text = "WWDC Virtual 2020"
                 return cell
             } else {
                 return VideoCell()
@@ -107,9 +107,9 @@ extension MenuVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Audio"
+            return "Audio & Video"
         case 1:
-            return "Video"
+            return "Coming Soon"
         default:
             return "Audio"
         }
