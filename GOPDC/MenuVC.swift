@@ -12,6 +12,8 @@ class MenuVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    let AVMenu = ["Media Playback","Media Capture","Audio Recorder", "Text to Speech"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
@@ -45,7 +47,7 @@ extension MenuVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 3
+            return AVMenu.count
         case 1:
             return 1
         default:
@@ -57,7 +59,7 @@ extension MenuVC: UITableViewDataSource {
         switch indexPath.section {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier(forSection: indexPath.section), for: indexPath) as? NormalCell {
-                cell.menuLabel.text = "Favorites"
+                cell.menuLabel.text = AVMenu[indexPath.row]
                 return cell
             } else {
                 return NormalCell()
