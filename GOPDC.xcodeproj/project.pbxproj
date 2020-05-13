@@ -15,6 +15,8 @@
 		4604EA73246AE76A004DA3A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4604EA71246AE76A004DA3A9 /* LaunchScreen.storyboard */; };
 		4640ED0E246BBEB2003F5348 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640ED0D246BBEB2003F5348 /* VideoCell.swift */; };
 		4640ED10246BBF74003F5348 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4640ED0F246BBF74003F5348 /* VideoCell.xib */; };
+		46D3CCDA246BDDF7002A0106 /* NormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCD8246BDDF7002A0106 /* NormalCell.swift */; };
+		46D3CCDB246BDDF7002A0106 /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46D3CCD9246BDDF7002A0106 /* NormalCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4604EA74246AE76A004DA3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4640ED0D246BBEB2003F5348 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		4640ED0F246BBF74003F5348 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		46D3CCD8246BDDF7002A0106 /* NormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalCell.swift; sourceTree = "<group>"; };
+		46D3CCD9246BDDF7002A0106 /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				4604EA74246AE76A004DA3A9 /* Info.plist */,
 				4640ED0D246BBEB2003F5348 /* VideoCell.swift */,
 				4640ED0F246BBF74003F5348 /* VideoCell.xib */,
+				46D3CCD8246BDDF7002A0106 /* NormalCell.swift */,
+				46D3CCD9246BDDF7002A0106 /* NormalCell.xib */,
 			);
 			path = GOPDC;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 				4640ED10246BBF74003F5348 /* VideoCell.xib in Resources */,
 				4604EA70246AE76A004DA3A9 /* Assets.xcassets in Resources */,
 				4604EA6E246AE768004DA3A9 /* Main.storyboard in Resources */,
+				46D3CCDB246BDDF7002A0106 /* NormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +155,7 @@
 				4604EA6B246AE768004DA3A9 /* MenuVC.swift in Sources */,
 				4640ED0E246BBEB2003F5348 /* VideoCell.swift in Sources */,
 				4604EA67246AE768004DA3A9 /* AppDelegate.swift in Sources */,
+				46D3CCDA246BDDF7002A0106 /* NormalCell.swift in Sources */,
 				4604EA69246AE768004DA3A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

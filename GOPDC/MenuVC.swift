@@ -20,28 +20,69 @@ class MenuVC: UIViewController {
     }
     
     func setupTableView() {
-        let nib = UINib(nibName: "VideoCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "videoCell")
+        tableView.register(UINib(nibName: "NormalCell", bundle: nil), forCellReuseIdentifier: getIdentifier(forSection: 0))
+        tableView.register(UINib(nibName: "VideoCell", bundle: nil), forCellReuseIdentifier: getIdentifier(forSection: 1))
+    }
+    
+    func getIdentifier(forSection section:Int) -> String {
+        switch section {
+        case 0:
+            return "normalCell"
+        case 1:
+            return "videoCell"
+        default:
+            return "videoCell"
+        }
     }
 }
 
 
 extension MenuVC: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        if section == 0 {
+            return 3
+        } else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! VideoCell
-        cell.videoSubtitle.text = "Test \(indexPath.row)"
-        cell.videoTitle.text = "WWDC Video on AVFoundation"
-        return cell
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier(forSection: indexPath.section), for: indexPath) as! NormalCell
+            cell.menuLabel.text = "Favorites"
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier(forSection: indexPath.section), for: indexPath) as! VideoCell
+            cell.videoSubtitle.text = "Test \(indexPath.row)"
+            cell.videoTitle.text = "WWDC Video on AVFoundation"
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Audio"
+        } else {
+            return "Video"
+        }
     }
 }
 
 extension MenuVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        if indexPath.section == 0 {
+            return 44
+        } else {
+            return 100
+        }
+        
     }
 }
+
+
 
