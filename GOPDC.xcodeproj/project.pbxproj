@@ -24,6 +24,7 @@
 		46D3CCDB246BDDF7002A0106 /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46D3CCD9246BDDF7002A0106 /* NormalCell.xib */; };
 		46D3CCDD246C18C2002A0106 /* MediaPlaybackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */; };
 		46D3CCDF246C1AFB002A0106 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3CCDE246C1AFB002A0106 /* VideoView.swift */; };
+		46D3CCE1246C2DD2002A0106 /* title.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46D3CCE0246C2DD2002A0106 /* title.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		46D3CCD9246BDDF7002A0106 /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
 		46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlaybackVC.swift; sourceTree = "<group>"; };
 		46D3CCDE246C1AFB002A0106 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		46D3CCE0246C2DD2002A0106 /* title.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				46D3CCD9246BDDF7002A0106 /* NormalCell.xib */,
 				46D3CCDE246C1AFB002A0106 /* VideoView.swift */,
 				1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */,
+				46D3CCE0246C2DD2002A0106 /* title.mp3 */,
 			);
 			path = GOPDC;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				1B0092BD246C06BD0020B582 /* TexttoSpeech.storyboard in Resources */,
 				1B0092B6246C03170020B582 /* MediaCapture.storyboard in Resources */,
 				4604EA70246AE76A004DA3A9 /* Assets.xcassets in Resources */,
+				46D3CCE1246C2DD2002A0106 /* title.mp3 in Resources */,
 				4604EA6E246AE768004DA3A9 /* Main.storyboard in Resources */,
 				46D3CCDB246BDDF7002A0106 /* NormalCell.xib in Resources */,
 				1B0092B8246C059B0020B582 /* AudioRecorder.storyboard in Resources */,

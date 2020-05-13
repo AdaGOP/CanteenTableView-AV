@@ -44,14 +44,52 @@
                                     <constraint firstAttribute="height" constant="180" id="y2b-an-Pdq"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Vmz-vA-lz1">
+                                <rect key="frame" x="16" y="272" width="382" height="115"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbj-ue-AWX">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="hgx-QR-HYl"/>
+                                            <constraint firstAttribute="height" constant="44" id="mp6-r0-2B3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Play Online Radio">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onlineAudioTapped:" destination="pb0-lk-PWO" eventType="touchUpInside" id="QAZ-Us-d8Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epB-MO-I46">
+                                        <rect key="frame" x="0.0" y="71" width="382" height="44"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="cYZ-vL-Dmn"/>
+                                            <constraint firstAttribute="height" constant="44" id="jKD-KI-00t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Play Local Audio">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="localAudioTapped:" destination="pb0-lk-PWO" eventType="touchUpInside" id="czx-fg-2id"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="JR8-jY-je3" firstAttribute="leading" secondItem="cPr-O2-j1d" secondAttribute="leading" id="6NB-BI-rGs"/>
                             <constraint firstItem="e3a-r9-ikf" firstAttribute="leading" secondItem="cPr-O2-j1d" secondAttribute="leading" id="ACd-fr-Hhg"/>
                             <constraint firstItem="e3a-r9-ikf" firstAttribute="top" secondItem="cPr-O2-j1d" secondAttribute="top" id="G3p-hb-AHy"/>
+                            <constraint firstItem="cPr-O2-j1d" firstAttribute="trailing" secondItem="Vmz-vA-lz1" secondAttribute="trailing" constant="16" id="HUc-yQ-X96"/>
                             <constraint firstItem="e3a-r9-ikf" firstAttribute="trailing" secondItem="cPr-O2-j1d" secondAttribute="trailing" id="QZU-J0-llC"/>
+                            <constraint firstItem="Vmz-vA-lz1" firstAttribute="top" secondItem="JR8-jY-je3" secondAttribute="bottom" constant="48" id="QeL-Fu-jlH"/>
                             <constraint firstItem="JR8-jY-je3" firstAttribute="top" secondItem="cPr-O2-j1d" secondAttribute="top" id="hZp-Zx-o38"/>
+                            <constraint firstItem="Vmz-vA-lz1" firstAttribute="leading" secondItem="cPr-O2-j1d" secondAttribute="leading" constant="16" id="kD3-7a-zbW"/>
                             <constraint firstItem="cPr-O2-j1d" firstAttribute="trailing" secondItem="JR8-jY-je3" secondAttribute="trailing" id="vYn-1H-PEc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cPr-O2-j1d"/>
@@ -59,6 +97,8 @@
                     <navigationItem key="navigationItem" title="Media Playback" id="NWJ-d1-5H2"/>
                     <connections>
                         <outlet property="controlLayerView" destination="e3a-r9-ikf" id="kw6-R3-4fg"/>
+                        <outlet property="localAudioBtn" destination="epB-MO-I46" id="4KS-N2-4u6"/>
+                        <outlet property="onlineAudioBtn" destination="Hbj-ue-AWX" id="GVG-T3-bPn"/>
                         <outlet property="playPauseButton" destination="Pk6-YN-xaH" id="d9z-JX-Bcu"/>
                         <outlet property="videoPlayer" destination="JR8-jY-je3" id="w9m-ni-jCc"/>
                     </connections>
