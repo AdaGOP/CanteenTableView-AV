@@ -26,10 +26,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC0-Br-vYX">
-                                <rect key="frame" x="20" y="840" width="374" height="30"/>
+                                <rect key="frame" x="16" y="818" width="382" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IuW-Yk-wkO"/>
+                                    <constraint firstAttribute="height" constant="44" id="IuW-Yk-wkO"/>
                                 </constraints>
                                 <state key="normal" title="Speak">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,12 +41,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XC0-Br-vYX" firstAttribute="leading" secondItem="lXg-V9-hkj" secondAttribute="leading" constant="20" id="GfK-A4-edR"/>
-                            <constraint firstItem="XC0-Br-vYX" firstAttribute="bottom" secondItem="lXg-V9-hkj" secondAttribute="bottom" constant="8" id="IVH-kE-weY"/>
                             <constraint firstItem="lXg-V9-hkj" firstAttribute="trailing" secondItem="ggt-bD-He1" secondAttribute="trailing" constant="20" id="R6E-M6-cgR"/>
-                            <constraint firstItem="lXg-V9-hkj" firstAttribute="trailing" secondItem="XC0-Br-vYX" secondAttribute="trailing" constant="20" id="YT2-NF-nAG"/>
+                            <constraint firstItem="lXg-V9-hkj" firstAttribute="trailing" secondItem="XC0-Br-vYX" secondAttribute="trailing" constant="16" id="ZT3-cA-hmK"/>
                             <constraint firstItem="ggt-bD-He1" firstAttribute="top" secondItem="lXg-V9-hkj" secondAttribute="top" id="cJC-oR-uk3"/>
                             <constraint firstItem="ggt-bD-He1" firstAttribute="leading" secondItem="lXg-V9-hkj" secondAttribute="leading" constant="20" id="dbF-I1-4aF"/>
+                            <constraint firstItem="lXg-V9-hkj" firstAttribute="bottom" secondItem="XC0-Br-vYX" secondAttribute="bottom" id="yMl-PX-p41"/>
+                            <constraint firstItem="XC0-Br-vYX" firstAttribute="leading" secondItem="lXg-V9-hkj" secondAttribute="leading" constant="16" id="zk6-x8-Fdg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lXg-V9-hkj"/>
                     </view>
