@@ -84,6 +84,7 @@
 				4604EA68246AE768004DA3A9 /* SceneDelegate.swift */,
 				4604EA6A246AE768004DA3A9 /* MenuVC.swift */,
 				46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */,
+				1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */,
 				4604EA6C246AE768004DA3A9 /* Main.storyboard */,
 				1B0092B5246C03170020B582 /* MediaCapture.storyboard */,
 				1B0092B3246C02AF0020B582 /* MediaPlayback.storyboard */,
@@ -97,7 +98,6 @@
 				46D3CCD8246BDDF7002A0106 /* NormalCell.swift */,
 				46D3CCD9246BDDF7002A0106 /* NormalCell.xib */,
 				46D3CCDE246C1AFB002A0106 /* VideoView.swift */,
-				1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */,
 				46D3CCE0246C2DD2002A0106 /* title.mp3 */,
 			);
 			path = GOPDC;

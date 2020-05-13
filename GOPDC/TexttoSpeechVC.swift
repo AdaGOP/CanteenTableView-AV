@@ -13,8 +13,6 @@ class TexttoSpeechVC: UIViewController {
 
     @IBOutlet weak var myTextView: UITextView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,23 +20,13 @@ class TexttoSpeechVC: UIViewController {
     }
 
     @IBAction func tapSpeakButton(_ sender: UIButton) {
-    
-//        checkPermissions()
+//      checkPermissions()
         let utterance = AVSpeechUtterance(string: myTextView.text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.voice = AVSpeechSynthesisVoice(language: "id-ID")
         utterance.rate = 0.5
         
         let synth = AVSpeechSynthesizer()
         synth.speak(utterance)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
