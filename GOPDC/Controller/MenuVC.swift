@@ -93,7 +93,7 @@ extension MenuVC: UITableViewDataSource {
                 self.getThumbnailImageFromVideoUrl(url: URL(string: videoUrl)!) { (thumbImage) in
                     cell.videoThumbnail.image = thumbImage
                 }
-                cell.videoSubtitle.text = "Test \(indexPath.row)"
+                cell.videoSubtitle.text = "Conference"
                 cell.videoTitle.text = "WWDC Virtual 2020"
                 return cell
             } else {
