@@ -226,6 +226,7 @@
 				1B0092BF246C18620020B582 /* TexttoSpeechVC.swift in Sources */,
 				4604EA6B246AE768004DA3A9 /* MenuVC.swift in Sources */,
 				46D3CCDF246C1AFB002A0106 /* VideoView.swift in Sources */,
+				1B0092C1246C36210020B582 /* AudioRecorderVC.swift in Sources */,
 				4640ED0E246BBEB2003F5348 /* VideoCell.swift in Sources */,
 				1B8B7104246CCC8F00410E9D /* RecordAudioVC.swift in Sources */,
 				46D3CCDD246C18C2002A0106 /* MediaPlaybackVC.swift in Sources */,
