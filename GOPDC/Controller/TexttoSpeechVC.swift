@@ -17,6 +17,8 @@ class TexttoSpeechVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.addGestureRecognizer(self.endEditingRecognizer())
+        self.navigationController?.navigationBar.addGestureRecognizer(self.endEditingRecognizer())
     }
 
     @IBAction func tapSpeakButton(_ sender: UIButton) {
@@ -29,4 +31,9 @@ class TexttoSpeechVC: UIViewController {
         synth.speak(utterance)
     }
 
+    private func endEditingRecognizer() -> UIGestureRecognizer {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(self.view.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        return tap
+    }
 }
