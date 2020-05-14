@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZO-v1-nb5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -9,14 +10,62 @@
         <!--Audio Recorder-->
         <scene sceneID="hGr-Nc-bxq">
             <objects>
-                <viewController id="xZO-v1-nb5" sceneMemberID="viewController">
+                <viewController id="xZO-v1-nb5" customClass="RecordAudioVC" customModule="GOPDC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2DI-yM-Wqc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqx-Or-3g8">
+                                <rect key="frame" x="182.5" y="438" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NO3-2E-a7S"/>
+                                    <constraint firstAttribute="width" constant="49" id="l0g-MO-kBb"/>
+                                </constraints>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="tapRecordButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="r9p-2b-rAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVl-26-Azm">
+                                <rect key="frame" x="70.5" y="438" width="32" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O9p-8f-PC7"/>
+                                    <constraint firstAttribute="width" constant="32" id="Sq4-GO-cOb"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="tapStopButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="ols-Pc-Yuj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq5-oV-vhV">
+                                <rect key="frame" x="311.5" y="438" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AFz-8v-rWc"/>
+                                    <constraint firstAttribute="width" constant="30" id="gD9-uw-qF0"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="tapPlayButton:" destination="xZO-v1-nb5" eventType="touchUpInside" id="PB3-PC-XrN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fq5-oV-vhV" firstAttribute="leading" secondItem="hqx-Or-3g8" secondAttribute="trailing" constant="80" id="4Jy-3o-kne"/>
+                            <constraint firstItem="hqx-Or-3g8" firstAttribute="centerX" secondItem="0Xx-8q-1Hm" secondAttribute="centerX" id="Ada-YP-BHZ"/>
+                            <constraint firstItem="hqx-Or-3g8" firstAttribute="leading" secondItem="gVl-26-Azm" secondAttribute="trailing" constant="80" id="BHc-oT-e5g"/>
+                            <constraint firstItem="fq5-oV-vhV" firstAttribute="centerY" secondItem="0Xx-8q-1Hm" secondAttribute="centerY" id="Ljo-tO-Jl0"/>
+                            <constraint firstItem="gVl-26-Azm" firstAttribute="centerY" secondItem="0Xx-8q-1Hm" secondAttribute="centerY" id="RlA-EN-ftk"/>
+                            <constraint firstItem="hqx-Or-3g8" firstAttribute="centerY" secondItem="0Xx-8q-1Hm" secondAttribute="centerY" id="WZM-Ny-pgQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Xx-8q-1Hm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Audio Recorder" id="yoS-Ho-ErK"/>
+                    <connections>
+                        <outlet property="playButton" destination="fq5-oV-vhV" id="amr-n0-WzP"/>
+                        <outlet property="recordButton" destination="hqx-Or-3g8" id="aAd-Uc-Rty"/>
+                        <outlet property="stopButton" destination="gVl-26-Azm" id="fzU-pt-s86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDE-to-EQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

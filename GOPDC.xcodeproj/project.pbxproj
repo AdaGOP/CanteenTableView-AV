@@ -12,6 +12,7 @@
 		1B0092B8246C059B0020B582 /* AudioRecorder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0092B7246C059B0020B582 /* AudioRecorder.storyboard */; };
 		1B0092BD246C06BD0020B582 /* TexttoSpeech.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0092BC246C06BD0020B582 /* TexttoSpeech.storyboard */; };
 		1B0092BF246C18620020B582 /* TexttoSpeechVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */; };
+		1B8B7104246CCC8F00410E9D /* RecordAudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B7103246CCC8F00410E9D /* RecordAudioVC.swift */; };
 		4604EA67246AE768004DA3A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604EA66246AE768004DA3A9 /* AppDelegate.swift */; };
 		4604EA69246AE768004DA3A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604EA68246AE768004DA3A9 /* SceneDelegate.swift */; };
 		4604EA6B246AE768004DA3A9 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604EA6A246AE768004DA3A9 /* MenuVC.swift */; };
@@ -35,6 +36,7 @@
 		1B0092B7246C059B0020B582 /* AudioRecorder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AudioRecorder.storyboard; sourceTree = "<group>"; };
 		1B0092BC246C06BD0020B582 /* TexttoSpeech.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TexttoSpeech.storyboard; sourceTree = "<group>"; };
 		1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexttoSpeechVC.swift; sourceTree = "<group>"; };
+		1B8B7103246CCC8F00410E9D /* RecordAudioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioVC.swift; sourceTree = "<group>"; };
 		4604EA63246AE768004DA3A9 /* GOPDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOPDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4604EA66246AE768004DA3A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4604EA68246AE768004DA3A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				46D3CCDC246C18C2002A0106 /* MediaPlaybackVC.swift */,
 				1B0092BE246C18620020B582 /* TexttoSpeechVC.swift */,
 				46D3CCE8246C3E7E002A0106 /* RecordVideoVC.swift */,
+				1B8B7103246CCC8F00410E9D /* RecordAudioVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				4604EA6B246AE768004DA3A9 /* MenuVC.swift in Sources */,
 				46D3CCDF246C1AFB002A0106 /* VideoView.swift in Sources */,
 				4640ED0E246BBEB2003F5348 /* VideoCell.swift in Sources */,
+				1B8B7104246CCC8F00410E9D /* RecordAudioVC.swift in Sources */,
 				46D3CCDD246C18C2002A0106 /* MediaPlaybackVC.swift in Sources */,
 				4604EA67246AE768004DA3A9 /* AppDelegate.swift in Sources */,
 				46D3CCE9246C3E7E002A0106 /* RecordVideoVC.swift in Sources */,
